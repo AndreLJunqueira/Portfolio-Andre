@@ -1,0 +1,133 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --text-color: white;
+    --bg-url: url(bg-mobile.jpg);
+    --border: rgba(255, 255, 255, 0.5);
+    --padding: rgba(255, 255, 255, 0.1);
+    --houver: rgba(255, 255, 255, 0.05);
+    --social-houver: rgba(255, 255, 255, 0.2);
+    --but-bg-url: url(MoonStars.svg);
+}
+.light {
+    --text-color: black;
+    --bg-url:url(bg-mobile-light.jpg);
+    --border: rgba(0, 0, 0, 0.5);
+    --padding: rgba(0, 0, 0, 0.1);
+    --houver: rgba(0, 0, 0, 0.05);
+    --social-houver: rgba(0, 0, 0, 0.2);
+    --but-bg-url: url(Sun.svg);
+}
+body {
+    background-image: var(--bg-url);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+body * {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+}
+header {
+    margin: 56px auto 0px;
+    width: 360px; 
+    text-align: center;
+    padding: 24px;
+}
+img {
+    margin: auto;
+    display: block;
+    width: 112px;
+}
+header>p {
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 8px;
+}
+#but {
+    margin: auto;
+    margin-top: 10px;
+    position: relative;
+    width: 130px;
+}
+#but button{
+    width: 32px;
+    height: 32px;
+    background: white var(--but-bg-url) no-repeat center;
+    border: 1px solid black;
+    border-radius: 50%;  
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+.light #but button {
+    right: 25%;
+    left: initial;
+}
+#but span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: var(--houver);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 9999px;
+    
+}
+main {
+    width: 360px; 
+    margin: auto; 
+    padding: 0 24px;
+}
+ul {
+    list-style: none;
+    padding: 24px 0px;
+}
+li {
+    border: 1px solid var(--border);
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--padding);
+    margin: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+a {
+    text-decoration: none;
+}
+li:hover {
+    border: 1.5px solid var(--text-color);
+    background: var(--houver);
+}
+div {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 0px 24px;
+    font-size: 30px;
+}
+div>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+div>a:hover {
+    background: var(--social-houver);
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+footer {
+    text-align: center;
+    padding-top: 32px;
+    font-size: 14px;
+}
