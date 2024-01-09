@@ -124,9 +124,9 @@ div>a {
     padding: 16px;
 }
 div>a:hover {
-    background: var(--social-houver);
+    background: var(--houver);
     border-radius: 50%;
-    transition: background 0.3s;
+    transition: background 0.5s;
 }
 footer {
     text-align: center;
