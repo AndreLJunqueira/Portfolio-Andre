@@ -32,11 +32,17 @@ body * {
     color: var(--text-color);
 }
 header {
-    margin: 56px auto 0px;
+    margin: 20px auto 0px;
     width: 100%; 
     max-width: 588px;
     text-align: center;
     padding: 24px;
+}
+header>nav {
+    display: flex;
+    gap: 20px;
+    padding: 0px 0px 30px 24px;
+    font-weight: 500;
 }
 img {
     margin: auto;
@@ -126,10 +132,27 @@ div>a {
 div>a:hover {
     background: var(--houver);
     border-radius: 50%;
-    transition: background 0.5s;
+    transition: background 0.3s;
+}
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.apresentacao_titulo {
+    padding: 15px 0px;
+    
+}
+.apresentacao_paragrafo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: justify;
+    text-indent: 20px;
 }
 footer {
     text-align: center;
     padding-top: 32px;
+    padding-bottom: 5px;
     font-size: 14px;
 }
