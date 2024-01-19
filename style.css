@@ -121,7 +121,7 @@ div {
     justify-content: center;
     gap: 16px;
     padding: 0px 24px;
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 div>a {
     display: flex;
@@ -154,5 +154,5 @@ footer {
     text-align: center;
     padding-top: 32px;
     padding-bottom: 5px;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
